@@ -1,0 +1,126 @@
+
+<h2>Cada Activities </h2>
+<mat-tab-group mat-stretch-tabs>
+	<mat-tab label="Action Plan">
+    <h4> Action Plan</h4>
+		<pre>
+1.CAD Establishment:- Grant on matching basis.  This includes expenditure on establishment of Command Area Development Authorities and expenditure on State Level Establishment.  The total expenditure on the above component should be restricted to 20% of the expenditure on field channel, field drain, Warabandi and reclamation of water logged areas.  
+
+2. Surveys, Planning and Design :-  Grant on matching basis. This includes expenditure on establishment cell for carrying out soil and Topographical surveys, expenditure on conducting surveys, expenditure on planning and design of CAD works and expenditure on supervision of OFD works.  
+
+3. Field  Irrigation Channel :-  Grant on matching basis.  This includes expenditure on lined channel restricted to 20% of the  total length of channel on outlet command basis and expenditures on control structures and unlined channels.  The Government of India will pay Rs.3000/Ha. or 50% of the actual expenditure whichever is less.
+
+4. Field Drain :-   Grant on matching basis.  This includes expenditure on earth work, road cutting and drop structures.  The Government of India will pay Rs.500/ Ha.  or 50% of the actual expenditure whichever is less. 
+
+5. Warabandi :-  Grant on matching.  This includes expenditure on construction of measuring devices in the field channel, expenditure on providing gates on out lets if required, expenditure on display board at outlet head, expenditure on wireless communication network and expenditure on necessary staff for formulation and implementation of Warabandi.  The Government of India will pay Rs. 150/Ha. or half of the actual expenditure whichever is less.  
+
+6. Reclamation of Water Logged Areas :-  Grant on matching basis.  This includes expenditure on survey, planning, Design and Reclamation.  The Government of India will pay Rs.6000/Ha. or 50% of the actual expenditure whichever is less.  
+
+7. Crop Compensation for DFD Works :-  Grant on matching basis.  This includes 2/3 value of crops foregono for land development works in Rabi Season.
+
+8. Adaptive Trial :-  Grant on matching basis.  This includes expenditure on items as included in the guidelines on adoptive trials.  The proposal of adoptive trials should have an approval from CAD wing of the Ministry of Water Resources.
+
+9. Demonstration and Training:-  Grant on matching basis.
+
+10. Drientation Training for senior level officers sponsored by Central Government:-     100% expenditure will be borne by Government of India.
+
+11.Subsidy for small and marginal farmers on IRDP Pattern :-  Grant on matching basis.  Subsidy admissible on sprinklers, Drip, land leveling/ shaping and development of ground water.
+
+12. Management Subsidy for farmers association :-  Functional grant of Rs.500/Ha. (Rs. 225 from Central, Rs.225 from State and Rs.50 from Farmers).  The amount to be paid where farmer’s associations are formed, registered and actually engaged in distribution of water.
+
+13. Evaluation Studies :-  Grant on matching basis.  However, for the studies sponsored by Government of India, Central Government will pay full cost on the studies and for the studies sponsored by the State Government the grant will be on matching basis.
+
+14. Equipment and Machinery :-   Loan on matching basis.
+
+15. Equity support to land development corporations and Farmers service societies:- Loan on matching basis.
+
+16. Special Loan Account :- Loan on matching basis for financing ineligible farmers for execution of OFD works.
+</pre>
+	</mat-tab>
+	<mat-tab label="Civil Works">
+    <h4> Civil Works </h4>
+		<pre>   
+    Participatory Irrigation Management  
+
+     In pursuance of the policy of the Government of India to involve farmers in the Water Management,
+     action has since been initiated to introduce participatory irrigation management (PIM) in the State.
+     As per the recommendations of the Expert Committee constituted for the purpose,
+     a high level working group has been constituted under the chairmanship of the additional Chief Secretary todeliberate on the pending issues of the Expert Committee and also to monitor the implementation of PIM in the State.
+
+    As per the recommendations of the Expert Committee on PIM,
+    amendments to the Karnataka Irrigation (levy of betterment contribution and water rate) Act, which provide the enabling and legal frame work and is a prerequisite for PIM has been promulgated. 
+    The main purpose of the amendment to the Act is to being about significant change in the present system of levy and collection of water and also in the management of distribution of water and maintenance of irrigation sub-system. 
+    This will fall within the jurisdiction of a Water Users Society.  Model bye laws for formation of Water Users Co-Societies have been finalised and the same is being adopted for formation of societies.  
+    225 Nos. of Societies were formed earlier to 31.12.99.
+    As per the new bye laws 85 Nos.  of societies have been formed after 31.12.99 as of 15.1.2000.  CADA wise break up of the societies formed are as under:
+
+  A)  Progress achieved earlier to 31.12.99
+  </pre>
+	</mat-tab>
+	<mat-tab label="Agri Related">
+    <img  style="width:80%;height:30%;margin:5% 0% 0% 10%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaEy8q4RP6At0oYUde7s5q9yqa6VwwaJcTIeEAfYjudX4AwQYb">
+    <h4> Agriculture Related  </h4>
+<pre>
+Birth of Agriculture Department.
+
+The Department of Agriculture, Manipur was emerged in March 1946 with a skeleton staff
+consisting of about a dozen members only headed by an Agriculture Officer in a small
+building at Babupara, Imphal.
+With the lunching of “Grow More Food Campaign” under Ministry of Food and Agriculture,
+Government of India a separate Food Production Office was established 
+in September 1950 with the objective of popularizing double 
+cropping in all suitable areas state in both Hills and Valley.
+The gradual increase of the staff strength to cop with the increasing 
+volume of work of the Department, the State Government recognized 
+the felt need of strengthening the Department that necessitated
+the creation of a post of Director of Agriculture,
+Manipur along with supporting staff during 1954. After 37 years of existence, Agriculture Department becomes a major department in the year 1983 wit</pre>
+	</mat-tab>
+	<mat-tab label="PIM">
+
+
+<!--
+
+<h3>PIM (participatory irrigatin managment) </h3>
+<a mat-raised-button routerLink="/search">
+FORmation of WCS</a>
+<br><br>
+<a mat-raised-button routerLink="/pim">
+Registered WCS</a>
+-->
+
+
+
+
+ <h3>PIM (participatory irrigatin managment)</h3>
+<div *ngFor="let item of items;let index = index" class="header" (click)="showSubItem(index)">
+  <a mat-raised-button>{{item.name}}</a><br><br>
+	<div *ngIf="visibleIndex === index" class="subheader">
+		<span *ngFor="let subItem of item.items">
+      <a  mat-button routerLink="search">{{subItem | titlecase}}</a><br><br>
+    </span>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+	</mat-tab>
+</mat-tab-group>
+
+
+  
+  

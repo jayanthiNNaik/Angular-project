@@ -1,0 +1,17 @@
+pre{
+  font-family: lato;
+}
+.header{
+  color:black;
+}
+
+.subheader {
+  background-color:white;
+  text-color : black;
+}
+
+.header p {
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
